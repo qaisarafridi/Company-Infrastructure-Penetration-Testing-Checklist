@@ -6,10 +6,11 @@ A Full Checklist for Infrastructure Penetration Testing
 
 External Infrastructure
 - **Recon Phase**
-    - [ ]  Identify web server, technologies and database
-    - [ ]  Subsidiary and Acquisition Enumeration
-    - [ ]  Reverse Lookup
-    - [ ]  ASN & IP Space Enumeration and Service Enumeration
-    - [ ]  Google Dorking
-    - [ ]  Github Recon
-    - [ ]  Directory Enumeration
+    - [ ]  Performing Subdomain Scans
+    - [ ]  Performing recon on Company's LinkedIn Page
+    - [ ]  Listing Employees from Company Profile
+    - [ ]  Extracting email addresss from Employees's Profile for Identifying email formats
+    - [ ]  Google Dorking on Email's Found / Guessed Patterns
+    - [ ]  Gathering Breached Credentials
+    - [ ]  Performing Port Scan on IPs
+    - [ ]  Using Shodan on Public Facing IPs
