@@ -55,25 +55,25 @@ NetBIOS Enumeration
 
 
 Vulnerability Assessment and PT
- FTP Port 21
+ FTP [Port 21]
 - [ ] Grabbing Banner for Versions
 - [ ] Anonymous Login
 - [ ] FTP Bounce
 - [ ] Default or Guessable Passwords
 
 
-SSH Port 22)
+SSH [Port 22]
 - [ ] Grabbing Banner for Versions
 - [ ] Null Password
 - [ ] Default or Guessable Passwords
 
-SMTP Port 25
+SMTP [Port 25]
 - [ ] Grabbing Banner for Versions
 - [ ] Connect with Telnet
 - [ ] SMTP Relay
 - [ ] User Enumeration
 
-DNS Port 53
+DNS [Port 53]
 - [ ] DNS Hostname Bruteforce
 - [ ] DNS Reverse Lookup
 - [ ] DNS Service Record Enumeration
@@ -100,9 +100,37 @@ IIS
 - [ ] System.Web.Mvc.dll
 - [ ] System.Web.Mvc.Ajax.dll
 - [ ] System.Web.Mvc.Html.dll
-- [ ] Microsoft IIS tilde character “~” Vulnerability
-- [ ] Basic Authentication bypass IIS 7.5 by trying to access
-- [ ] /admin:$i30$INDEX_ALLOCATION/admin.php
+- [ ] Microsoft IIS tilde character "~" Vulnerability
+- [ ] Basic Authentication bypass [IIS 7.5] by trying to access
+- [ ] /admin:$i30:$INDEX_ALLOCATION/admin.php
 - [ ] /admin::$INDEX_ALLOCATION/admin.php
 - [ ] Grabbing Banner for Version
 - [ ] Directory BruteForce
+
+
+Kerberos [Port 88]
+Active Directory Attacks (We're not going to cover this here)
+Bruteforcing Usernames with nmap
+krb5-enum-users.nse
+
+RPC [Port 111]
+Enumerating Basic Information using rpcinfo
+Connect to RPC with RPC Client
+
+Rusersd [Port 1026]
+Enumerating users with rusers
+
+NFS [2049]
+Checking for Accessible mounts
+showmount -e <IP>
+Mounting
+mount -t nfs [-o vers=2] <ip>:<remote_folder> <local_folder> -o nolock
+
+LDAP [Port 389]
+Listing public information
+nmap -n -sV --script "ldap* and not brute" <IP>
+Checking Null Credentials
+ldapsearch -x -h <IP> -D '' -w '' -b "DC=<1_SUBDOMAIN>,DC=<TDL>"
+Extracting Users
+ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN<Users,DC=
+<1_SUBDOMAIN>,DC=<TDL>"
