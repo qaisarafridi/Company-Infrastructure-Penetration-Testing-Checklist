@@ -52,3 +52,57 @@ NetBIOS Enumeration
 - [ ] nbtscan
 - [ ] nmblookup
 - [ ] Visualizing Network on MindMaps
+
+
+Vulnerability Assessment and PT
+ FTP Port 21
+- [ ] Grabbing Banner for Versions
+- [ ] Anonymous Login
+- [ ] FTP Bounce
+- [ ] Default or Guessable Passwords
+
+
+SSH Port 22)
+- [ ] Grabbing Banner for Versions
+- [ ] Null Password
+- [ ] Default or Guessable Passwords
+
+SMTP Port 25
+- [ ] Grabbing Banner for Versions
+- [ ] Connect with Telnet
+- [ ] SMTP Relay
+- [ ] User Enumeration
+
+DNS Port 53
+- [ ] DNS Hostname Bruteforce
+- [ ] DNS Reverse Lookup
+- [ ] DNS Service Record Enumeration
+- [ ] DNS Service Discovery
+- [ ] DNS Zone Transfer
+
+
+Jenkins
+- [ ] Pages accessible without authentication like
+- [ ] /people
+- [ ] asynchPeople
+- [ ] /securityRealm/user/admin/search/index?q=
+- [ ] Vulnerable Versions Exploitation
+- [ ] https://github.com/gquere/pwn_jenkins
+
+IIS
+- [ ] Enumerating .config files
+- [ ] Trace.AXD enabled debugging
+- [ ] Path Traversal
+- [ ] Source Code Disclosure
+- [ ] Downloading DLLs
+- [ ] System.Web.Routing.dll
+- [ ] System.Web.Optimization.dll
+- [ ] System.Web.Mvc.dll
+- [ ] System.Web.Mvc.Ajax.dll
+- [ ] System.Web.Mvc.Html.dll
+- [ ] Microsoft IIS tilde character “~” Vulnerability
+- [ ] Basic Authentication bypass IIS 7.5 by trying to access
+- [ ] /admin:$i30$INDEX_ALLOCATION/admin.php
+- [ ] /admin::$INDEX_ALLOCATION/admin.php
+- [ ] Grabbing Banner for Version
+- [ ] Directory BruteForce
