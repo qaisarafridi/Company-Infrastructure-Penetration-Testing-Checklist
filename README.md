@@ -17,6 +17,6 @@ External Infrastructure
 
 
 Internal Infrastructure
-    - [ ] Using Responder in Analyze Mode
-    - [ ] Using Wireshark for monitoring Network Traffic
-    - [ ] Performing Netowrk Range Scan
+   - [ ]  Using Responder in Analyze Mode
+   - [ ]  Using Wireshark for monitoring Network Traffic
+   - [ ]  Performing Netowrk Range Scan
