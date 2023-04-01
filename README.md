@@ -14,3 +14,9 @@ External Infrastructure
     - [ ]  Gathering Breached Credentials
     - [ ]  Performing Port Scan on IPs
     - [ ]  Using Shodan on Public Facing IPs
+
+
+Internal Infrastructure
+    - [ ] Using Responder in Analyze Mode
+    - [ ] Using Wireshark for monitoring Network Traffic
+    - [ ] Performing Netowrk Range Scan
