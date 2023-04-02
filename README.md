@@ -27,7 +27,7 @@ Fingerprinting
 - [ ] Gathering DNS Records
 - [ ] Bruteforce Hostnames with DNS
 - [ ] Google Dorking
-- [ ] Site: Domain
+- [ ] Site: [Domain]
 - [ ] Infrastructure Penetration Testing Checklist2filetype:"xls | xlsx | doc | docx | ppt | pptx | pdf" site:[Domain] "FOUO" | "NOFORN" | "Confidential"
 - [ ] filetype:xml inurl:sitemap
 - [ ] and many more
@@ -135,20 +135,25 @@ LDAP [Port 389]
 - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN<Users,DC=
 - [ ] <1_SUBDOMAIN>,DC=<TDL>"
     
- - [ ] Extracting Computers
-- [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Computers,DC=<1_SUBDOMAIN>,DC=<TDL>"
-- [ ] Extracting my info
-- [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=<MY NAME>,CN=Users,DC=<1_SUBDOMAIN>,DC=<TDL>"
-- [ ] Extracting Domain Admins
-- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b "CNDomain
-- [ ] Admins,CNUsers,DC1_SUBDOMAIN,DCTDL"
-- [ ] Extracting Enterprise Admins
-- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b "CNEnterprise
-- [ ] Admins,CNUsers,DC1_SUBDOMAIN,DCTDL"
-- [ ] Extracting Administrators:
-- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b
-- [ ] "CNAdministrators,CNBuiltin,DC1_SUBDOMAIN,DCTDL"
-- [ ] Extracting Remote Desktop Groups
-- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b "CNRemote Desktop
-- [ ] Users,CNBuiltin,DC1_SUBDOMAIN,DCTDL"
-- [ ] For graphical Interface, jxplorer can be used  
+Extracting Users
+   - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Users,DC=<1_SUBDOMAIN>,DC=<TDL>"
+
+Extracting Computers
+   - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Computers,DC=<1_SUBDOMAIN>,DC=<TDL>"
+
+Extracting my info
+   - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=<MYNAME>,<1_SUBDOMAIN>,DC=<TDL>"
+    
+Extracting Domain Admins
+ - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=DomainAdmins,CN=Users,DC=<1_SUBDOMAIN>,DC=<TDL>"
+    
+Extracting Enterprise Admins
+ - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=EnterpriseAdmins,CN=Users,DC=<1_SUBDOMAIN>,DC=<TDL>"
+
+Extracting Administrators:
+ - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Administrators,CN=Builtin,DC=<1_SUBDOMAIN>,DC=<TDL>"
+
+Extracting Remote Desktop Groups
+ - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Remote Desktop Users,CN=Builtin,DC=<1_SUBDOMAIN>,DC=<TDL>"
+
+
