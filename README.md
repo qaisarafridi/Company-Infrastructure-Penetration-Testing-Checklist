@@ -233,7 +233,7 @@ MSSQL (Port 1433)
          name=MSSQLSERVER -sV -p 1433 <IP>
 
 
-- [ ]Execute Commands with MSSQL
+- [ ] Execute Commands with MSSQL
 - [ ] Authenticated
 - [ ] crackmapexec mssql -d <Domain name> -u <username> -p <password> -x "id"
 
@@ -294,7 +294,7 @@ VNC (Port 5900)
 - [ ] vncpwd.exe [encrypted password]
 
 
-Redis [Port 6379]
+Redis (Port 6379)
 - [ ] Banner Grabbing
 - [ ] Try accessing redis without credentials
 - [ ] Enumeration after login
@@ -310,12 +310,12 @@ Redis [Port 6379]
 
     
     
-PJL [Port 9100]
+PJL (Port 9100)
 - [ ] PRET can be used for interacting with PJL
 - [ ] https://github.com/RUB-NDS/PRET
 
     
-Memcache [Port 11211]
+Memcache (Port 11211)
 - [ ] Extracting Stats
 - [ ] memcstat --servers=127.0.0.1
 - [ ] Extracting Memcdump
