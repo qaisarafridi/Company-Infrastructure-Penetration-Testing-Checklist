@@ -156,4 +156,31 @@ Extracting Administrators:
 Extracting Remote Desktop Groups
  - [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Remote Desktop Users,CN=Builtin,DC=<1_SUBDOMAIN>,DC=<TDL>"
 
-
+ - [ ] For graphical Interface, jxplorer can be used
+    
+    
+SMB [Port 445]
+- [ ] Anonymous Credentials
+- [ ] Grabbing Banner for Versions
+- [ ] Null Sessions
+- [ ] Exploitation with RPCClient
+- [ ] List user :enumdomusers
+- [ ] Get user details: queryuser <0xrid>
+- [ ] Get user groups: queryusergroups <0xrid>
+- [ ] GET SID of a user: lookupnames <username>
+- [ ] Get users aliases: queryuseraliases [builtin|domain] <sid>
+- [ ] List groups: enumdomgroups
+- [ ] Get group details: querygroup <0xrid>
+- [ ] Get group members: querygroupmem <0xrid>
+- [ ] List alias: enumalsgroups <builtin|domain>
+- [ ] Get members: queryaliasmem builtin|domain 0xrid>
+- [ ] List domains: enumdomains
+- [ ] Get SID: lsaquery
+- [ ] Domain info: querydominfo
+- [ ] Find SIDs by name: lookupnames <username>
+- [ ] Find more SIDs: lsaenumsid
+- [ ] RID cycling (check more SIDs): lookupsids <sid>
+- [ ] Listing Shares
+- [ ] Null Session
+- [ ] smbclient --no-pass -L //<IP>
+- [ ] Listinng Shares with Credentials  
