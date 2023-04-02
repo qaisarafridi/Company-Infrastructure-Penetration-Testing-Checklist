@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://twitter.com/mrhidden04" target="_blank" rel="noreferrer"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpcxyUy4uoYhqTatu2uTz-TkPCZzllvlse5fy8OIIWzmiKAL-xLFwjW7CzYGMHFOa2CgrCZv6ALFixoY1vF6EJEQYhrZDDVLEhRbGYx-cwPi8R1ZgxaYTCc0oDKz2KyTrbQoKpwiKPi8esG8Z46-BonFKrVG2IrahKXu54_PLvm1b3K6DPuHaYKjqw/s960/pic.png" alt="M.Qaisar |Qaisar "></a>
+  <a href="https://twitter.com/mrhidden04" target="_blank" rel="noreferrer"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFxUPXp9c_x9O_xgroXhcX9qab0zBksxwbb35MMfH1riq7UytyDQ49DhgeGD_KFXaT2cnLUiPNIIyhBxdaEKvLkrSraQ9xsvR6EAwnzyZ-lVQWWdH6TvVlUxs4UXroKpQUtbzpu2xYhWEjY6f2z-b8SnoN_Ahjuth0k0u_guUVm6vcaaZv3zk4H73s/s700/6047ecfd9942cf001865d6fb.png" alt="M.Qaisar Afridi "></a>
 </p>
 
 
