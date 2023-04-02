@@ -233,13 +233,13 @@ MSSQL (Port 1433)
          name=MSSQLSERVER -sV -p 1433 <IP>
 
 
-Execute Commands with MSSQL
-    - [ ] Authenticated
-    - [ ] crackmapexec mssql -d <Domain name> -u <username> -p <password> -x "id"
+- [ ]Execute Commands with MSSQL
+- [ ] Authenticated
+- [ ] crackmapexec mssql -d <Domain name> -u <username> -p <password> -x "id"
 
 
     
- UnAuthenticated
+ - [ ] UnAuthenticated
   - [ ] If xp_cmdshell is enabled, we can execute commands without authentication
 
 
@@ -249,7 +249,7 @@ MSSQL Privilege Escalation
     
 
     
-MySQL [Port 3306]
+MySQL (Port 3306)
  - [ ] Enumerating with nmap
    - [ ] nmap -sV -p 3306 --script mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-
          password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-
@@ -279,13 +279,13 @@ MySQL [Port 3306]
   - [ ] mysql -u root --password=<PASSWORD> -e "SELECT User,Host,authentication_string FROM mysql.user;"    
     
     
-Postgresql [Port 5432]
+Postgresql (Port 5432)
 - [ ] Banner Grabbing
 - [ ] DB Name Flag Injection
 
 
     
-VNC [Port 5900]
+VNC (Port 5900)
 - [ ] UnAuth VNC Access
 - [ ] VNC Password
 - [ ] Password Location Password will be encrypted)
@@ -312,7 +312,7 @@ Redis [Port 6379]
     
 PJL [Port 9100]
 - [ ] PRET can be used for interacting with PJL
-- [ ] https://github.com/RUBNDS/PRET
+- [ ] https://github.com/RUB-NDS/PRET
 
     
 Memcache [Port 11211]
