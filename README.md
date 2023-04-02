@@ -108,29 +108,47 @@ IIS
 - [ ] Directory BruteForce
 
 
-Kerberos [Port 88]
-Active Directory Attacks (We're not going to cover this here)
-Bruteforcing Usernames with nmap
-krb5-enum-users.nse
+ Kerberos [Port 88]
+- [ ] Active Directory Attacks (We're not going to cover this here)
+- [ ] Bruteforcing Usernames with nmap
+- [ ] krb5-enum-users.nse
 
 RPC [Port 111]
-Enumerating Basic Information using rpcinfo
-Connect to RPC with RPC Client
+- [ ] Enumerating Basic Information using rpcinfo
+- [ ] Connect to RPC with RPC Client
 
 Rusersd [Port 1026]
-Enumerating users with rusers
+- [ ] Enumerating users with rusers
 
 NFS [2049]
-Checking for Accessible mounts
-showmount -e <IP>
-Mounting
-mount -t nfs [-o vers=2] <ip>:<remote_folder> <local_folder> -o nolock
+- [ ] Checking for Accessible mounts
+- [ ] showmount -e <IP>
+- [ ] Mounting
+- [ ] mount -t nfs [-o vers=2] <ip>:<remote_folder> <local_folder> -o nolock
 
 LDAP [Port 389]
-Listing public information
-nmap -n -sV --script "ldap* and not brute" <IP>
-Checking Null Credentials
-ldapsearch -x -h <IP> -D '' -w '' -b "DC=<1_SUBDOMAIN>,DC=<TDL>"
-Extracting Users
-ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN<Users,DC=
-<1_SUBDOMAIN>,DC=<TDL>"
+- [ ] Listing public information
+- [ ] nmap -n -sV --script "ldap* and not brute" <IP>
+- [ ] Checking Null Credentials
+- [ ] ldapsearch -x -h <IP> -D '' -w '' -b "DC=<1_SUBDOMAIN>,DC=<TDL>"
+- [ ] Extracting Users
+- [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN<Users,DC=
+- [ ] <1_SUBDOMAIN>,DC=<TDL>"
+    
+ - [ ] Extracting Computers
+- [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=Computers,DC=<1_SUBDOMAIN>,DC=<TDL>"
+- [ ] Extracting my info
+- [ ] ldapsearch -x -h <IP> -D '<DOMAIN>\<username>' -w '<password>' -b "CN=<MY NAME>,CN=Users,DC=<1_SUBDOMAIN>,DC=<TDL>"
+- [ ] Extracting Domain Admins
+- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b "CNDomain
+- [ ] Admins,CNUsers,DC1_SUBDOMAIN,DCTDL"
+- [ ] Extracting Enterprise Admins
+- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b "CNEnterprise
+- [ ] Admins,CNUsers,DC1_SUBDOMAIN,DCTDL"
+- [ ] Extracting Administrators:
+- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b
+- [ ] "CNAdministrators,CNBuiltin,DC1_SUBDOMAIN,DCTDL"
+- [ ] Extracting Remote Desktop Groups
+- [ ] ldapsearch -x -h IP D 'DOMAIN\<username>' -w '<password>' -b "CNRemote Desktop
+- [ ] Users,CNBuiltin,DC1_SUBDOMAIN,DCTDL"
+- [ ] For graphical Interface, jxplorer can be used  
