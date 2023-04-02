@@ -288,7 +288,7 @@ Postgresql (Port 5432)
 VNC (Port 5900)
 - [ ] UnAuth VNC Access
 - [ ] VNC Password
-- [ ] Password Location Password will be encrypted)
+- [ ] Password Location (Password will be encrypted)
 - [ ] ~/.vnc/passwd
 - [ ] Decrypting Password
 - [ ] vncpwd.exe [encrypted password]
